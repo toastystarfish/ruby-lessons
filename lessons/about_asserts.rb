@@ -18,4 +18,4 @@ actual_value = 3 + 9
 assert_equal expected_value, actual_value
 
 # fill in the value with the correct answer
-assert __ == 1 + 1
+assert_equal __, 1 + 1

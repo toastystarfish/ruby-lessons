@@ -20,8 +20,6 @@ assert_equal __, 9 / 2.0
 assert_equal __, 6 % 4
 assert_equal __, 4 % 4
 
-assert_equ
-
 # addition to a variable in place
 x = 0
 x = x + 3
@@ -29,6 +27,11 @@ assert_equal __, x
 
 x = 0
 x += 3
+assert_equal __, x
+
+# The value will not change if you dont reassign it
+x = 0
+x + 3
 assert_equal __, x
 
 x = 3

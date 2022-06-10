@@ -2,7 +2,7 @@
 array = Array.new
 assert_equal __, array.class
 assert_equal [], array
-assert_equal 0, array.count
+assert_equal __, array.count
 
 array[0] = 1
 assert_equal [1], array
@@ -57,3 +57,22 @@ assert_equal __, array
 value = array.shift
 assert_equal __, value
 assert_equal __, array
+
+# loops are a useful way to perform actions across each element in an array
+# variables inside the loop are temporary but you can edit variables declared outside the loop for later use
+# the current item in the loop is access using |name| notation.  You can use any name you like inside the ||
+count = 0
+array = [1, 2, 3]
+array.each do |item|
+  count += 1
+end
+
+assert_equal __, count
+
+sum = 0
+array = [2, 4, 6]
+array.each do |number|
+  sum += number
+end
+
+assert_equal __, sum
